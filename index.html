@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>assignment1-DEV</title>
+        <style>
+            .centreimage{
+                display:block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+         <style>
+            .float-start{
+                display:block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+
+        <style>
+            .start{
+                display:block;
+                margin-left: left;
+                margin-right: auto;
+            }
+        </style>
+
+
+
+
+    </head>
+    <body background="https://img.freepik.com/premium-photo/wallpaper-with-colorful-hexagon-pattern_147933-8292.jpg" style="background-repeat: no-repeat; background-attachment: fixed; background-size:100% 100%">
+        <h1 style="text-align: center;font-size: 120px;"><u style="color:aqua ">CONTOUR PLOT</u></h1>
+        <h2 style="text-align: left;font-size: 70px; color: rgb(250, 215, 234)">DEFINITION :</h2>
+        <P style="text-align: left;font-size: 70px; color:yellow">A contour plot is a graphical technique for representing 
+            a 3-dimensional surface by plotting constant z slices, called contours, on a 2-dimensional format. That is, given a 
+            value for z, lines are drawn for connecting the (x,y) coordinates where that z value occurs.</P>
+            <img src="https://www.itl.nist.gov/div898/handbook/eda/gif/contourp.gif" class="centreimage" width="590" height="550">    
+            
+        <h3 style="text-align: left;font-size: 70px; color: rgb(250, 215, 234)"> USES :</h3>
+        <P style="text-align: left;font-size: 70px; color:yellow">
+            1. Scientific Data Visualization: Contour plots are widely used in scientific research to visualize and analyze data.
+             They are particularly useful for representing data that varies over two continuous dimensions, such as temperature, pressure, 
+             or concentration. Contour plots provide a clear visual representation of the data's patterns, trends, and relationships.<br>
+
+            <br>2. Topographic Mapping: Contour plots are commonly used in cartography and geography to create topographic maps. 
+            These maps represent the elevation of a land surface using contour lines. By connecting points of equal elevation, contour 
+            plots help visualize the shape and features of the terrain, such as mountains, valleys, and plateaus.<br>
+        
+        <br>3. Engineering and Design: Contour plots are valuable in engineering and design fields. They can be used to analyze and optimize 
+        various parameters, such as stress distribution, fluid flow, or heat transfer. Contour plots help engineers and designers understand 
+        how these parameters change across a given area, enabling them to make informed decisions and improve designs.<br>
+
+        <br>4. Data Analysis and Statistics: Contour plots are useful for visualizing and analyzing multivariate data. They can reveal patterns, 
+        correlations, and outliers in the data. Contour plots can also be used to identify regions of interest or to compare different datasets.<br>
+
+        <br>5. Physical and Biological Sciences: Contour plots find applications in physics, chemistry, biology, and other scientific disciplines. 
+        They help visualize phenomena like electric field lines, concentration gradients, or population distributions. Contour plots aid in understanding 
+        complex systems and can assist in making predictions or identifying critica<br></P>
+
+        <h4 style="text-align: left;font-size: 70px; color: rgb(250, 215, 234)"> FIELD OF CLIMATOLOGY :</h4>
+
+        <P style="text-align: left;font-size: 70px; color:yellow">1. Visualizing Climate Data: Contour plots allow researchers to visualize complex climate data, 
+            such as temperature, precipitation, wind patterns,or atmospheric pressure, across a geographical area. By representing data through contour lines or 
+            color gradients, contour plots provide a clear and intuitive understanding of spatial patterns and trends.<br>
+
+            <br>2. Identifying Climate Features: Contour plots help in identifying and analyzing important climate features like fronts, pressure systems, ocean 
+            currents, or temperature gradients. These features play a crucial role in understanding climate dynamics, weather patterns, and their impacts on 
+            regional or global climates.<br>
+            
+            <br>3. Assessing Climate Change: Contour plots are valuable for studying climate change by comparing data from different time periods. By overlaying 
+            contour plots of the same variable from different years or decades, researchers can visually identify changes in climate patterns, such as shifts in 
+            temperature or precipitation distribution.<br>
+            
+            <br>4. Interpreting Climate Models: Climate models generate vast amounts of data, and contour plots aid in interpreting and validating these models. 
+            By comparing model outputs with observed data through contour plots, scientists can assess the accuracy and reliability of climate models, helping to 
+            improve future predictions.<br>
+            
+           <br> 5. Communicating Climate Information: Contour plots are effective tools for communicating climate information to a wider audience. They simplify 
+           complex data into visually appealing representations that can be easily understood by policymakers, educators, or the general public, facilitating 
+           informed decision-making and raising awareness about climate-related issues.<br></P>
+            
+        
+        <img src="https://www.weather.gov/source/zhu/ZHU_Training_Page/Miscellaneous/Heights_Thicknesses/geopotential_height.gif" 
+        alt="" class="float-start" width="690" height="650">
+
+        <h5 style="text-align: left;font-size: 70px; color: rgb(250, 215, 234)"> #SAMPLE EXAMPLE WITH OUTPUT :</h5>
+        <P style="text-align: left;font-size: 70px; color:yellow">
+            import numpy as np<br>
+            import matplotlib.pyplot as plt<br>
+            
+            <br># Generate data
+            x = np.linspace(-5, 5, 100)<br>
+            y = np.linspace(-5, 5, 100)<br>
+            X, Y = np.meshgrid(x, y)<br>
+            Z = np.sin(np.sqrt(X**2 + Y**2))<br>
+            
+            <br># Create contour plot<br>
+            plt.contourf(X, Y, Z, cmap='viridis')<br>
+            plt.colorbar()<br>
+            
+            <br># Add labels and title<br>
+            plt.xlabel('X')<br>
+            plt.ylabel('Y')<br>
+            plt.title('Rectangular Contour Plot')<br>
+            
+            <br># Display the plot<br>
+            plt.show()</P><br>
+
+        <h6 style="text-align: left;font-size: 70px; color: rgb(250, 215, 234)">OUTPUT</h6>
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20201228074038/rectangularcontour.PNG" 
+        alt="" class="start" width="690" height="650">
+
+
+
+        
+           
+
+         
+
+
+
+       
+    </body>
+</html>
